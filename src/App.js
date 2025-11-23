@@ -9,8 +9,6 @@ export default function MailClient() {
   // const selectedCount = 1;
 
   // TODO: allow multiple selection
-  // Object method
-  // const [selectedIds, setSelectedIds] = useState({ count: 0 });
 
   // Array method
   const [selectedIds, setSelectedIds] = useState([]);
@@ -18,32 +16,8 @@ export default function MailClient() {
   function handleToggle(toggledId) {
     // Original
     // setSelectedId(toggledId);
+
     // TODO: allow multiple selection
-    // Object method
-    // const checkIdVal = selectedIds[toggledId];
-    // let nextSelectedIdsState;
-    // if (checkIdVal === undefined) {
-    //   nextSelectedIdsState = {
-    //     ...selectedIds,
-    //     count: selectedIds.count + 1,
-    //     [toggledId]: true,
-    //   };
-    // } else {
-    //   if (checkIdVal) {
-    //     nextSelectedIdsState = {
-    //       ...selectedIds,
-    //       count: selectedIds.count + -1,
-    //       [toggledId]: false,
-    //     };
-    //   } else {
-    //     nextSelectedIdsState = {
-    //       ...selectedIds,
-    //       count: selectedIds.count + 1,
-    //       [toggledId]: true,
-    //     };
-    //   }
-    // }
-    // setSelectedIds(nextSelectedIdsState);
 
     // Array method
     let nextIds;
@@ -58,9 +32,6 @@ export default function MailClient() {
   // Array method
   const selectedCount = selectedIds.length;
 
-  // Object method
-  // const selectedCount = selectedIds.count;
-
   return (
     <>
       <h2>Inbox</h2>
@@ -74,10 +45,6 @@ export default function MailClient() {
               // letter.id === selectedId
 
               // TODO: allow multiple selection
-              // Object method
-              // selectedIds[letter.id] !== undefined
-              //   ? selectedIds[letter.id]
-              //   : false
 
               // Array method
               selectedIds.some((id) => id === letter.id)
