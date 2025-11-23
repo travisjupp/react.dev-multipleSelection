@@ -12,9 +12,6 @@ export default function MailClient() {
   // Object method
   const [selectedIds, setSelectedIds] = useState({ count: 0 });
 
-  // Array method
-  // const [selectedIds, setSelectedIds] = useState([]);
-
   function handleToggle(toggledId) {
     // Original
     // setSelectedId(toggledId);
@@ -46,19 +43,7 @@ export default function MailClient() {
       }
     }
     setSelectedIds(nextSelectedIdsState);
-
-    // Array method
-    // let nextIds;
-    // if (selectedIds.some((id) => id === toggledId)) {
-    // nextIds = selectedIds.filter((id) => id !== toggledId);
-    // } else {
-    // nextIds = [...selectedIds, toggledId];
-    // }
-    // setSelectedIds(nextIds);
   }
-
-  // Array method
-  // const selectedCount = selectedIds.length;
 
   // Object method
   const selectedCount = selectedIds.count;
@@ -80,9 +65,6 @@ export default function MailClient() {
               selectedIds[letter.id] !== undefined
                 ? selectedIds[letter.id]
                 : false
-
-              // Array method
-              // selectedIds.some((id) => id === letter.id)
             }
             onToggle={handleToggle}
           />
