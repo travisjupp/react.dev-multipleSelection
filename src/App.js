@@ -21,7 +21,7 @@ export default function MailClient() {
 
     // Array method
     let nextIds;
-    if (selectedIds.some((id) => id === toggledId)) {
+    if (selectedIds.includes(toggledId)) {
       nextIds = selectedIds.filter((id) => id !== toggledId);
     } else {
       nextIds = [...selectedIds, toggledId];
@@ -47,7 +47,7 @@ export default function MailClient() {
               // TODO: allow multiple selection
 
               // Array method
-              selectedIds.some((id) => id === letter.id)
+              selectedIds.includes(letter.id)
             }
             onToggle={handleToggle}
           />
