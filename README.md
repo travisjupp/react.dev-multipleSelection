@@ -15,8 +15,8 @@ This repository also contains alternative solutions implemented using different 
 
 - **`array-method` Branch:** Solves using an array in state. [Link to array-method branch](https://github.com/travisjupp/react.dev-multipleSelection/tree/array-method)
 
-- **`object-method` Branch:** Solves using an object in state. [Link to object-method branch](https://github.com/travisjupp/react.dev-multipleSelection/tree/object-method)
+- **`object-method` Branch:** Solves using an object in state (better performance than array-method). [Link to object-method branch](https://github.com/travisjupp/react.dev-multipleSelection/tree/object-method)
 
-- **`set-method` Branch:** Solves using a set in state. [Link to set-method branch](https://github.com/travisjupp/react.dev-multipleSelection/tree/object-method)
+- **`set-method` Branch:** Solves using a set in state (best performance especially when scaled up). [Link to set-method branch](https://github.com/travisjupp/react.dev-multipleSelection/tree/object-method)
 
 Forked from: https://react.dev/learn/choosing-the-state-structure#implement-multiple-selection
